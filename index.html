@@ -435,11 +435,8 @@ async function saveShared(key, value){
    SEED DATA
 ===================================================== */
 const SEED_PRODUCTS = [
-  {id:'p1', icon:'💧', image:'', name:'Propolis Tetes 20ml', tag:'Best Seller', desc:'Ekstrak propolis murni untuk daya tahan tubuh harian, cukup 3–5 tetes.', basePrice:60000, price:95000},
-  {id:'p2', icon:'💊', image:'', name:'Propolis Kapsul Softgel', tag:'Isi 30 Kapsul', desc:'Praktis dikonsumsi tiap hari, dosis terukur, tanpa rasa pahit.', basePrice:85000, price:135000},
-  {id:'p3', icon:'🌿', image:'', name:'Propolis Throat Spray', tag:'Untuk Tenggorokan', desc:'Semprotan cepat untuk menjaga kenyamanan tenggorokan sehari-hari.', basePrice:45000, price:75000},
-  {id:'p4', icon:'✨', image:'', name:'Propolis Beauty Serum', tag:'Perawatan Kulit', desc:'Serum wajah dengan propolis untuk kulit tampak lebih sehat & lembap.', basePrice:70000, price:120000},
-];
+  {id:'p1', icon:'', image:'bos propolis.jpg', name:'BOS PROPOLIS', tag:'Best Seller', desc:'Membantuu meningkatkan daya tahan tubuh', basePrice:50000, price:70000},
+  ];
 const SEED_PACKAGES = [
   {id:'pkg1', name:'Starter', price:0, desc:'Mulai jualan tanpa modal awal, cocok untuk pemula.', benefits:['Akses ke semua produk','Komisi standar dari selisih harga','Bahan promosi dasar','Support via komunitas']},
   {id:'pkg2', name:'Pro Seller', price:150000, desc:'Untuk seller yang lebih serius mengembangkan omset.', benefits:['Semua benefit Starter','Materi promosi & konten siap pakai','Prioritas stok produk','Support respon cepat']},
@@ -670,7 +667,7 @@ function Hero(){
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="kicker">Dari sarang lebah hutan Nusantara</div>
+        <div class="kicker"></div>
         <h1>Kekuatan alami propolis, <span class="gold">untuk tubuh yang lebih tangguh.</span></h1>
         <p>${SITE_NAME} diproses higienis dari propolis mentah pilihan untuk mendukung daya tahan tubuh dan menjaga kesehatan setiap hari.</p>
         <div class="hero-actions">
